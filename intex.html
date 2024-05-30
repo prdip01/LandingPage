@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Landing Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- yeha mai ese animatin niche wala  -->>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex align-items-center">
+            <div class="logo-container mr-3">
+                <img src="Asset 4.png" alt="College Logo" class="college-logo rounded-circle">
+            </div>
+            <h1 class="college-heading mb-0">GOVERNENT ENGINEERING COLLEGE,PALAMU (822118)</h1>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__fadeIn" href="https://gecpalamu.org/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__fadeIn" href="https://gecpalamu.org/b-tech-1st-and-2nd-sem-syllabus/">Syllabus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__fadeIn" href="https://gecpalamu.org/news/noticeapplication-form-for-preparation-of-state-merit-list-on-the-basis-of-jee-main-2024-result/">Admission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__fadeIn" href="https://gecpalamu.org/department/">Branches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__fadeIn" href="https://gecpalamu.org/about-university/">Notice</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="position-relative vh-100">
+        <video autoplay muted loop id="background-video" class="w-100 h-100 position-absolute">
+            <source src="COLLGE DRON VIEW.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="home-content position-relative text-center text-white d-flex flex-column justify-content-center align-items-center h-100">
+            <h1 class="display-4 mb-4 animate__animated">Welcome to GEC,PALAMU</h1>
+            <button onclick="scrollToSection('Official Website')" class="btn btn-primary btn-lg animate__animated animate__pulse animate__infinite">Learn More</button>
+        </div>
+    </section>
+
+    <section id="branches" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated">Branches</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 animate__animated animate__zoomIn">
+                        <div class="card-body text-center">
+                            <h2>Computer Science</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 animate__animated animate__zoomIn">
+                        <div class="card-body text-center">
+                            <h2>Civil Engineering</h2>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 animate__animated animate__zoomIn">
+                        <div class="card-body text-center">
+                            <h2>Electrical Engineering</h2>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 animate__animated animate__zoomIn">
+                        <div class="card-body text-center">
+                            <h2>Mechanical Engineering</h2>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="admission" class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="mb-4 animate__animated">Admission</h2>
+            <p class="animate__animated">admission starded plz visit jececb for more information .</p>
+            <button onclick="scrollToSection('home')" class="btn btn-outline-light btn-lg animate__animated animate__pulse animate__infinite">Go to Home</button>
+        </div>
+    </section>
+
+    <section id="notice" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4 animate__animated">Notice</h2>
+            <p class="animate__animated">Details about notices and announcements.</p>
+            <button onclick="scrollToSection('admission')" class="btn btn-outline-dark btn-lg animate__animated animate__pulse animate__infinite">Go to Admission</button>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="mb-4 animate__animated">Contact Us</h2>
+            <p class="animate__animated">For more information, reach out to us or visit us using the following links:</p>
+            <a href="https://maps.app.goo.gl/HVeRk43sniBcfEmN9" class="btn btn-outline-primary btn-lg animate__animated animate__pulse animate__infinite m-2">Google Map</a>
+            <a href="https://gecpalamu.org/" class="btn btn-outline-secondary btn-lg animate__animated animate__pulse animate__infinite m-2">Official Website</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 govement Engineering college Palamu. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+    <section id="notice" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4 animate__animated">Notice</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Date</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Notice 1</td>
+                        <td>May 21, 2024</td>
+                        <td> On friday there is no cs class </td>
+                    </tr>
+                    <tr>
+                        <td>Notice 2</td>
+                        <td>June 1, 2024</td>
+                        <td> gec is also know as mit </td>
+                    </tr>
+                    <!-- Add more rows for additional notices -->
+                </tbody>
+            </table>
+            <button onclick="scrollToSection('admission')" class="btn btn-outline-dark btn-lg animate__animated animate__pulse animate__infinite">Go to Admission</button>
+        </div>
+    </section>
+    
+</body>
+</html>
